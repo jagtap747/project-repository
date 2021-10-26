@@ -1,0 +1,13 @@
+<form class="text-center border border-light p-5">
+<div class="form-group row col-md-3">
+    <p class="h4 mb-4">Sign in</p>
+<small *ngIf='loginInvalid'>{{errorMessage}}</small>
+
+<input type="text" name="username" [(ngModel)]="username" class="form-control mb-4" placeholder="Username">
+ <input type="password" name="password"  [(ngModel)]="password" class="form-control mb-4" placeholder="Password">
+<br><button (click)="login()" class="btn btn-primary  text-left">Login</button>
+
+</div>
+
+
+</form>
